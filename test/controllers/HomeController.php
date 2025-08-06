@@ -7,6 +7,7 @@ class HomeController
         $this->user= new User ;
 
     }
+    
     function chitiet(){
         if(isset($_GET['ID'])){
             $user = $this->user->chitiet($_GET['ID']);
@@ -41,6 +42,6 @@ class HomeController
             }
         }
         $this->user->add($data);
-        header('Location:'.BASE_URL);
+        header('Location:'.BASE_URL);drfdrfdrfdrf
     }
 }
